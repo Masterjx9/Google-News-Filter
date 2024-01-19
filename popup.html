@@ -12,7 +12,10 @@
         }
 
         h1 {
-            color: #1a76d2;
+          background: -webkit-linear-gradient(#000000,#000000,#00346c, #003366,#000000); 
+            -webkit-background-clip: text;
+            background-clip: text;
+          -webkit-text-fill-color: transparent;
             font-size: 24px;
             margin-bottom: 20px;
         }
@@ -63,7 +66,10 @@
     </style>
 </head>
 <body>
-    <h1>News Filter Extension</h1>
+  <div class="header form-group">
+    <img src="icon.png" alt="News Filter Icon" style="max-width: 91px;max-height: 58px;">
+    <h1 style="white-space: nowrap;">News Filter Extension</h1>
+</div>
     <div class="form-group">
         <input type="text" id="articleName" placeholder="Enter article name">
         <button id="confirmButton">Confirm</button>
