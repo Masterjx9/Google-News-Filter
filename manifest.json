@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "News Filter for Google News",
+  "version": "1.0",
+  "description": "A simple Google Chrome extension.",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png",
+    "32": "icon.png",
+    "64": "icon.png",
+    "96": "icon.png"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab","storage","scripting"],
+  "host_permissions": ["https://news.google.com/"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://news.google.com/*"],
+      "js": ["removeArticle.js", "popup.js"]
+    }
+  ]
+}
