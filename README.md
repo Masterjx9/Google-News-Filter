@@ -1,6 +1,8 @@
 
 # 📰 News Filter Extension 🚀
 
+**Now available on Google Web Store** - [Google Web Store Extension](https://chromewebstore.google.com/detail/kockbnnmooegjeijgjgabnoblcpajooa?hl=en)
+
 Welcome to the official repository for the **News Filter Extension**! This Chrome extension is crafted to enhance your news browsing experience, filtering out content based on your preferences. 👓
 
 ## Introduction 🌟
