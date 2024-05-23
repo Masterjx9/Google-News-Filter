@@ -20,6 +20,7 @@ async function checkAndRemoveArticles() {
                     function: removeArticles,
                     args: [result.namesList]
                 });
+                console.log("Removing articles for authors: ", result.namesList);
             }
         });
     }
@@ -28,8 +29,8 @@ async function checkAndRemoveArticles() {
 function removeArticles(namesList) {
     // This function will be serialized and executed in the context of the tab.
     // So, we cannot access any variables or functions defined outside of it.
-    namesList.forEach(author => {
-        // Call removeArticle for each author in the list
-        removeArticle(author);
+    namesList.forEach(word => {
+        // Call removeArticle for each word in the list
+        removeArticle(word);
     });
 }
